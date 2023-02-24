@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Ganga Misthan Bhandar </title>
+    <style>
+        body {
+            background: url("img/wooden-board-empty-table-front-260nw-1082369309.jpg");
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .above {
+            display: block;
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            padding: 0px;
+            position: relative;
+            left: 15px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .navbar {
+            border: solid #0029ff 2px;
+            width: 42%;
+            position: relative;
+            left: 90px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 900;
+            margin: auto;
+            padding: 2px;
+            border-radius: 10px;
+        }
+
+        .buy {
+            display: block;
+            width: 90px;
+            padding: 10px;
+            margin: 5px;
+            position: absolute;
+            right: 25px;
+            top: 12px;
+            font-size: 5px;
+        }
+
+        .above img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .list li {
+            list-style: none;
+            padding: 0px;
+            float: left;
+            width: 80px;
+            margin: 2px;
+            text-decoration: none;
+
+        }
+
+        .list li a:hover {
+            color: rgb(219, 14, 14);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .btn {
+            padding: 5px;
+            margin: 5px auto;
+            color: black;
+            background-color: rgb(243, 245, 122);
+            border: solid red 2px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button img {
+            position: relative;
+            right: 4px;
+            top: 3px;
+            border: black solid 1px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            color: rgb(219, 80, 75);
+            background-color: rgb(97, 169, 228);
+            text-decoration: underline;
+        }
+
+        #mid {
+            color:rgb(0, 0, 0);
+            position: absolute;
+            top: 10px;
+            left: 258px;
+            border: solid 7px #ff630094;
+            font-size: 58px;
+        }
+
+        .container {
+            border: #ff2f2f 2px solid;
+            width: 45%;
+            height: 50%;
+            font-weight: 700;
+            position: relative;
+            top: 1px;
+            left:5.8%;
+            border-radius: 8px;
+            background-color: #0f011bba;
+        }
+
+        .frmgroup {
+            color: dodgerblue;
+            text-align: justify;
+            position: relative;
+            left: 20px;
+            width: 70%;
+            padding: 5px;
+        }
+
+        h2 {
+            color: #d10808;
+            width: 34%;
+            text-align: center;
+            background-color: rgb(104 238 193 / 32%);
+            border: rgb(238 207 104 / 72%) solid 3px;
+            position: relative;
+            left: 157px;
+            top: 70%;
+            border-radius: 15px;
+        }
+
+        h4 {
+            color: #00e9d7;
+            position: relative;
+            left: 100px;
+            width: 35%;
+            padding: 10px;
+            border: solid 2px #00e9d7;
+            border-radius: 10px;
+            background-color: #7b68ee63;
+
+        }
+       #hiimg{
+           width:170px;
+           float:right;
+           position: relative;
+           right:10px;
+           bottom:20px
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="above">
+            <div class="img">
+                <img src="img/Ganga Sweet House.png" alt="this is logo">
+            </div>
+        </div>
+        <div id="mid">
+            <b>Sri Ganga Misthan Bhandaar</b>
+        </div>
+        <hr>
+        <div class="navbar">
+            <nav>
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Item-Price</a></li>
+                    <li><a href="#">Place-Order</a></li>
+                    <li><a href="#">Rate-Us</a></li>
+                    <li><a href="#">Contact-Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="buy">
+            <div>
+                <button class="btn"><img src="img/amazoncart-feat.jpeg" width=35px>Cart</button>
+            </div>
+            <div>
+                <button class="btn">HELP</button>
+            </div>
+        </div>
+    </header>
+    <h2>BEST SWEET SHOP OF BABRALA</h2>
+    <div class="container">
+        <h4>Place your Order! HERE........</h4>
+        <div>
+            <img src="img/images (4).jpeg" id="hiimg">
+        </div>
+        <form action="noaction.php"></form>
+        <div class="frmgroup">
+            Customer_Name: <input type="text" name="myname" placeholder="Enter your name">
+        </div>
+        <div class="frmgroup">
+            Address: <input type="text" name="adress" placeholder="Enter your Address">
+        </div>
+        <div class="frmgroup">
+            Phone_No.: <input type="number" name="no." placeholder="Enter your 10digit mobile no.">
+        </div>
+        <div class="frmgroup">
+            Email-Id: <input type="email" name="email" placeholder="Enter your email-id">
+        </div>
+        <div class="frmgroup">
+            Item: <input type="text" name="item" placeholder="Enter the Sweet name">
+            Qty:<select name="mychoclate" id="cho">
+                <option value="x">1kg</option>
+                <option value="y">500gm</option>
+                <option value="z" selected>250gm</option>
+            </select>
+        </div>
+        <div class="frmgroup">
+            <input class="btn"type="submit" value="BUY">
+            <input class="btn" itype="submit" value="ADD_TO_CART">
+
+        </div>
+
+
+</body>
+
+</html>

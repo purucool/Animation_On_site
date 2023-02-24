@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puru Gym</title>
+    <link rel="stylesheet" href="gym.css">
+    <style>
+        body {
+            background: url("img/Weightlifting-Gym-Zoom-Background.jpg");
+            width: 90%;
+            background-repeat: no-repeat;
+            background-color: white;
+            background-size: cover;
+            box-sizing: border-box;
+
+        }
+
+        .logo {
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 191px;
+            border: 1px solid rgb(219, 27, 107);
+            border-radius: 5px;
+        }
+
+        .form {
+            display: inline-block;
+            border-radius: 7px;
+            position: absolute;
+            top: 27px;
+            right: 45px;
+
+        }
+
+        .navbar {
+            width: 50%;
+            border: 1px solid rgb(102, 218, 218);
+            position: sticky;
+            margin: 3px auto;
+            display: block;
+            height: 48px;
+            border-radius: 5px;
+            background-color: rgb(19 25 17 / 64%);
+
+        }
+
+        .mid {
+            display: inline-block;
+        }
+
+        ul {
+            overflow: auto;
+        }
+
+        .mid li {
+            text-decoration: underline;
+            display: inline-block;
+            list-style: none;
+            color: black;
+            padding: 1px 8px;
+            margin: 0px;
+            font-family: cursive;
+        }
+
+        .logo img {
+            width: 90px;
+            filter: invert(100%);
+        }
+
+        .mid li a {
+            color: rgb(80, 121, 244);
+            text-decoration:none;
+        }
+
+        .mid li a:hover {
+            color: red;
+            text-decoration:underline;
+            border: rgb(175, 37, 97) 1px solid;
+        }
+
+        .img {
+            color: darkgreen;
+            font-weight: bold;
+            text-align: center;
+            background-color: darkturquoise;
+        }
+
+        .btn {
+            background: black;
+            color: rgb(111, 168, 243);
+            padding: 5px 6px;
+            cursor: pointer;
+            margin: 3px;
+            font-size: 10px;
+            border: rgba(202, 16, 103, 0.76) 2px solid;
+            border-radius: 25px;
+            font-family: cursive;
+            width:90px
+        }
+
+        .btn:hover {
+            color: lightgreen;
+        }
+
+        .container {
+            border: 2px black solid;
+            margin: 65px 450px;
+            width: 40%;
+            padding: 2px 2px;
+            border-radius: 5px;
+            font-family: cursive;
+            background-color: #abe6b980;
+        }
+
+        .frmgroup {
+            padding: 2px;
+            text-align: justify;
+            display: block;
+            width: 99%;
+            color: #000000;
+            font-weight: bold;
+            border: 1px;
+            margin: 3px;
+        }
+        .container h3 {
+            text-align: center;
+            color: rgb(219, 27, 107);
+            border: solid 1px #2b351efc;
+            width: 302px;
+            margin:12px auto;
+            background-color: #000000b3;
+        }
+        .frmgroup button{
+            display: block;
+            margin: auto;
+            width:102px
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/download.jpeg">
+            <div class="img"><span>FitnessGym</span></div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul class="mid">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Traning_type</a></li>
+                    <li><a href="">Plan & Pricing</a></li>
+                    <li><a href="">Book Classes</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="form">
+            <button class="btn">Email us</button>
+            <button class="btn"> Call us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best Gym of Babrala</h3>
+        <form action="noaction.php"></form>
+        <div class="frmgroup">
+            Name: <input type="text" name="myname" placeholder="Enter your name">
+        </div>
+        <div class="frmgroup">
+            Age: <input type="text" name="age" placeholder="Enter your age">
+        </div>
+        <div class="frmgroup">
+            Phone_No.: <input type="number" name="no." placeholder="Enter your 10digit mobile no.">
+        </div>
+        <div class="frmgroup">
+            Email-Id: <input type="email" name="email" placeholder="Enter your email-id">
+        </div>
+        <div class="frmgroup">
+            Weight: <input type="text" name="w" placeholder="Enter your Weight">
+        </div>
+        <div class="frmgroup">
+            Height: <input type="text" name="h" placeholder="Enter your Height">
+        </div>
+        <div class="frmgroup">
+            Gender: Male<input type="radio" name="gender"> Female<input type="radio" name="gender">
+        </div>
+        <div class="frmgroup">
+            <button class=btn><input type="submit"></button>
+        </div>
+
+    </div>
+</body>
+</html>
