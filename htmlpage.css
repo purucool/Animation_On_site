@@ -1,0 +1,129 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+.header{
+    padding: 5px;
+    position:fixed;
+    z-index: 2000;
+    top: 0;
+    width: 100%;
+    padding: 16px 0px;
+}
+.btn{
+    border:1px solid red;
+    border-radius: 3px;
+    color:white;
+    background: rgb(238, 85, 85);
+    padding:10px;
+    margin-left:-26px;
+    font-weight: 600;
+    font-size:14px;
+    cursor: pointer;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items:center;
+    position: fixed;
+    width: 100%;
+}
+.li{
+    /* border:1px solid black; */
+    align-self: center;
+    padding:12px;
+    margin:0px -86px; 
+    font-weight:575;
+    list-style-type:none;
+}
+#img1{
+    /* border:1px solid black; */
+    position: fixed;
+    margin-left:-56px;
+    padding-bottom:14px;
+    width:100px;
+    height:80px;
+    left: 138px;
+}
+li>a{
+    text-decoration: none;
+    color:rgb(65, 64, 64);
+}
+a:hover{
+    color: rgb(238, 85, 85);
+}
+.btn:hover{
+    border:none;
+    background-color: transparent;
+    color:rgb(239, 95, 95,0.8);
+    box-shadow: 1px 2px 7px 3px rgb(65, 64, 64,0.4) ;
+}
+/* immage annimation */
+#onlyimg{
+    display: flex;
+    flex-wrap:wrap;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:95%;
+    height:350px;
+    background-image: url("adv-4.jpeg");
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 3px rgb(65, 64, 64) ;
+    animation:slider 20s infinite linear;
+    /* animation :name time kabtakchale timingfunction */
+    /* to show full image */
+    overflow:hidden;
+    /* display:none; */
+}
+@keyframes slider {
+    0%
+    {
+        background-image:url("adv-2.webp") ;
+        background-size: 100% 100%;
+        /* left:0%; */
+    }
+    35%
+    {
+        background-image: url("adv-3.jpeg");
+        background-size: 100% 100%;
+        /* left:-100%; */
+    }
+    75%{
+        background-image: url("aadv-1.jpeg");
+        background-size: 100% 100%;
+        /* left:-200%; */
+    }
+}
+.contofitems{
+    background: rgb(203, 201, 201,0.3);
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    position:fixed;
+    top:465px;
+    left:23px;
+    width:97%;
+}
+.item{
+    font-size:19px;
+    /* border:1px solid black;; */
+    align-self:center;
+    padding:18px;
+    margin-left:80px;
+}
+.item img{
+    width: 30px;
+    height:30px;
+    size: 100% 100%;
+    object-fit: contain;
+    margin-right: 15px;
+    margin-top:10px;
+}
